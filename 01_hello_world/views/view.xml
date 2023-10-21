@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_ej_pet_form" model="ir.ui.view">
+        <field name="name">ej.pet.form</field>
+        <field name="model">ej.pet</field>
+        <field name="arch" type="xml">
+            <form string="Pets List">
+                <group>
+                    <field name="name" />
+                    <field name="age" />
+                    <field name="color" />
+                </group>
+                <group>
+                    <field name="species" />
+                    <field name="size" />
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_ej_pet_tree" model="ir.ui.view">
+        <field name="name">ej.pet.tree</field>
+        <field name="model">ej.pet</field>
+        <field name="arch" type="xml">
+            <tree string="Pets List">
+                    <field name="name" />
+                    <field name="age" />
+                    <field name="color" />
+                    <field name="species" />
+                    <field name="size" />
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="ej_pet_act">
+        <field name="name">Pet</field>
+        <field name="res_model">ej.pet</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="view_ej_pet_tree" />
+    </record>
+
+    <menuitem id="ej_pets_menu" name="Pets" web_icon="stock,static/description/pets.icon" sequence="10" />
+    <menuitem id="submenu_ej_pets_menu" name="Pets" sequence="10" parent="ej_pets_menu" />
+    <menuitem id="submenu_ej_pets_action" name="Pets" sequence="10" parent="submenu_ej_pets_menu" action="ej_pet_act" />
+
+</odoo>
