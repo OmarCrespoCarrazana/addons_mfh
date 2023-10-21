@@ -1,6 +1,6 @@
 {
     'name': '01 Hello World',
-    'version': '16.0.1.1',
+    'version': '16.0.1.2',
     'author': 'Omar Crespo Carrazana',
     'maintainer': 'Omar Crespo Carrazana',
     'summary': 'First Example',

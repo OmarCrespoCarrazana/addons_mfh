@@ -16,7 +16,7 @@
                 </group>
                 <group>
                     <field name="my_age" />
-                    <field name="remove_me" />
+                    <field name="remove_me" widget="boolean_toggle" />
                 </group>
             </form>
         </field>
@@ -43,7 +43,7 @@
         <field name="view_id" ref="view_ej_pet_tree" />
     </record>
 
-    <menuitem id="ej_pets_menu" name="Pets" web_icon="stock,static/description/pets.icon" sequence="10" />
+    <menuitem id="ej_pets_menu" name="Pets" web_icon="stock,static/description/icon.png" sequence="10" />
     <menuitem id="submenu_ej_pets_menu" name="Pets" sequence="10" parent="ej_pets_menu" />
     <menuitem id="submenu_ej_pets_action" name="Pets" sequence="10" parent="submenu_ej_pets_menu" action="ej_pet_act" />
 

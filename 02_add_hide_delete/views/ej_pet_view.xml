@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_hello_world_inh_form" model="ir.ui.view">
+        <field name="name">view.hello.world.inh.form</field>
+        <field name="model">ej.pet</field>
+        <field name="inherit_id" ref="01_hello_world.view_ej_pet_form"/>
+        <field name="arch" type="xml">
+
+            <field name="size" position="after">
+                <field name="weight"/>
+            </field>
+
+            <field name="my_age" position="replace">
+                <field name="owners_age"/>
+            </field>
+
+            <field name="remove_me" position="replace"/>
+
+        </field>
+    </record>
+
+    <record id="view_hello_world_inh_tree" model="ir.ui.view">
+        <field name="name">view.hello.world.inh.tree</field>
+        <field name="model">ej.pet</field>
+        <field name="inherit_id" ref="01_hello_world.view_ej_pet_tree"/>
+        <field name="arch" type="xml">
+
+            <field name="size" position="before">
+                <field name="weight"/>
+            </field>
+        </field>
+    </record>
+</odoo>
