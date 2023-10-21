@@ -14,6 +14,10 @@
                     <field name="species" />
                     <field name="size" />
                 </group>
+                <group>
+                    <field name="my_age" />
+                    <field name="remove_me" />
+                </group>
             </form>
         </field>
     </record>

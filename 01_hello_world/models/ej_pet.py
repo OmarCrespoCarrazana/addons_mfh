@@ -13,3 +13,8 @@ class EjPet(models.Model):
     size = fields.Selection([('small', 'Small'),
                              ('medium', 'Medium'),
                              ('big', 'Big')], 'Size', required=True)
+
+    # Fields to be used in next exersice
+
+    my_age = fields.Integer('Should be the Owners Age', required=True)
+    remove_me = fields.Boolean('Will be removed', default=True)
