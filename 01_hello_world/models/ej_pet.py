@@ -16,5 +16,5 @@ class EjPet(models.Model):
 
     # Fields to be used in next exersice
 
-    my_age = fields.Integer('Should be the Owners Age', required=True)
+    my_age = fields.Integer('Should be the Owners Age')
     remove_me = fields.Boolean('Will be removed', default=True)

@@ -1,6 +1,6 @@
 {
     'name': '03 Calculated Fields',
-    'version': '16.0.1.1',
+    'version': '16.0.1.2',
     'author': 'Omar Crespo Carrazana',
     'maintainer': 'Omar Crespo Carrazana',
     'summary': 'Hello World will be extended',
@@ -8,6 +8,7 @@
     'category': 'Extra Tools',
     'depends': ['01_hello_world'],
     'data': ['views/pet_views.xml',
-             'data/pet_data.xml'],
+             'data/pet_data.xml',
+             'data/ir_sequence.xml'],
     'installable': True,
 }
