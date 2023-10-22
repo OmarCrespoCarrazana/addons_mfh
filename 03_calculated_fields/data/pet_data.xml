@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data noupdate="1">
+        <record id="data_pet_01" model="ej.pet">
+            <field name="name">Firulais</field>
+            <field name="age">3</field>
+            <field name="color">white</field>
+            <field name="species">dog</field>
+            <field name="size">big</field>
+        </record>
+    </data>
+</odoo>
