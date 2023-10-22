@@ -5,7 +5,7 @@
         <field name="model">ej.pet</field>
         <field name="inherit_id" ref="01_hello_world.view_ej_pet_form"/>
         <field name="arch" type="xml">
-            
+
             <data>
                 <xpath expr="//group[@name='main_group']" position="before">
                     <div class="oe_title">
