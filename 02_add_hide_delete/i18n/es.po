@@ -1,0 +1,31 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* 02_add_hide_delete
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230930\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-22 15:13+0000\n"
+"PO-Revision-Date: 2023-10-22 15:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: 02_add_hide_delete
+#: model:ir.model.fields,field_description:02_add_hide_delete.field_ej_pet__owners_age
+msgid "Owner age"
+msgstr "Edad del dueño"
+
+#. module: 02_add_hide_delete
+#: model:ir.model.fields,field_description:02_add_hide_delete.field_ej_pet__weight
+msgid "Weight in pounds"
+msgstr "Peso en libras"
+
+#. module: 02_add_hide_delete
+#: model:ir.model,name:02_add_hide_delete.model_ej_pet
+msgid "ej.pet"
+msgstr ""
