@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_hello_world_inh_form" model="ir.ui.view">
+        <field name="name">view.hello.world.inh.form</field>
+        <field name="model">ej.pet</field>
+        <field name="inherit_id" ref="01_hello_world.view_ej_pet_form"/>
+        <field name="arch" type="xml">
+            <field name="species" position="after">
+                <field name="pet_sound"/>
+                <field name="mydb"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="view_hello_world_inh_tree" model="ir.ui.view">
+        <field name="name">view.hello.world.inh.form</field>
+        <field name="model">ej.pet</field>
+        <field name="inherit_id" ref="01_hello_world.view_ej_pet_tree"/>
+        <field name="arch" type="xml">
+            <field name="species" position="after">
+                <field name="pet_sound"/>
+                <field name="mydb"/>
+            </field>
+        </field>
+    </record>
+</odoo>
