@@ -27,17 +27,17 @@ class FtpUpload(models.TransientModel):
             ftp.connect(host, port)
             try:
                 ftp.login(user, password)
-            except:
-                raise UserError(_("Failed FTP Login"))
+            except Exception as error:
+                raise UserError("Failed FTP Login: \n" + str(error))
             try:
                 file = open(path, "rb")
-            except:
-                raise UserError(_("Failed txt open"))
+            except Exception as error:
+                raise UserError("Failed txt open: \n" + str(error))
             try:
                 ftp.storbinary(f"STOR {folder_path}/{file_name}", file)
             except Exception as error:
                 print(error)
-                raise UserError(_(error))
+                raise UserError(error)
             file.close()
             ftp.close()
         except Exception as error:
